@@ -39,7 +39,6 @@ public class Frag_login extends Fragment {
         editText_username = (EditText)rootView.findViewById(R.id.editText_username);
         editText_password = (EditText)rootView.findViewById(R.id.editText_password);
         button_signIn = (Button)rootView.findViewById(R.id.button_signIn);
-        textView_forgotPassword = (TextView)rootView.findViewById(R.id.textView_forgotPassword);
 
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(getActivity());
@@ -54,14 +53,6 @@ public class Frag_login extends Fragment {
             }
         });
 
-        // click "forgot password"
-        textView_forgotPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), RetrievePasswordActivity.class));
-                //getActivity().finish();
-            }
-        });
 
         return rootView;
     }
