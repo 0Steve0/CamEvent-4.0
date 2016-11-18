@@ -7,18 +7,18 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText_username"
         android:background="@drawable/rectangle_edittext"
-        android:hint="Email"
+        android:hint="@string/email"
         android:textColorHint="@color/hint_text_color"
         android:singleLine="true"
-        android:drawableLeft="@drawable/user_blackicon"
+        android:drawableLeft="@drawable/ic_me"
         android:drawablePadding="10dp"
         android:textColorHighlight="@color/colorPrimary"
         android:textCursorDrawable="@drawable/my_cursor"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"/>
 
     <EditText
         android:layout_width="330dp"
@@ -30,33 +30,24 @@
         android:textColorHighlight="@color/colorPrimary"
         android:textCursorDrawable="@drawable/my_cursor"
         android:drawablePadding="10dp"
-        android:hint="Password"
+        android:hint="@string/password"
         android:textColorHint="@color/hint_text_color"
         android:layout_below="@+id/editText_username"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="16dp"
         />
 
     <Button
         android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:text="Sign In"
+        android:text="@string/sign_in"
         android:textSize="@dimen/textsize_normal"
         android:id="@+id/button_signIn"
         android:background="@drawable/rounded_edittext"
         android:layout_marginTop="28dp"
         android:layout_below="@+id/editText_password"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Forgot Password"
-        android:id="@+id/textView_forgotPassword"
-        android:layout_below="@+id/button_signIn"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
