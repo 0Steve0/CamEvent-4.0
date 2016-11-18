@@ -12,7 +12,7 @@
         android:layout_alignParentStart="false"
         android:background="@drawable/rectangle_edittext"
         android:hint="@string/email"
-        android:drawableLeft="@drawable/user_blackicon"
+        android:drawableLeft="@drawable/ic_me"
         android:drawablePadding="10dp"
         android:textColorHint="@color/hint_text_color"
         android:singleLine="true"
